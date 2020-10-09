@@ -1,12 +1,13 @@
 import React from "react"
 import { BrowserRouter } from "react-router-dom"
-import App from "components/App"
+import { Header, Footer, Home } from "components"
 
 const Root = () => {
     return (
         <BrowserRouter basename="/42BLOG">
-			Root
-            <App />
+            <Header />
+            <Home />
+            <Footer />
         </BrowserRouter>
     );
 }

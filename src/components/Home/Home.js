@@ -1,26 +1,38 @@
-import React from 'react'
-import router, { NavLink } from "react-router-dom"
+    import React from 'react'
+import router from "react-router-dom"
 import { Header, Footer } from "components"
 
 import * as styled from "./HomeStyle"
 
-const Button = () => (
-    <div>
-        button
-    </div>
+const Button = ({position}) => (
+    <styled.HomeButton position={position}>
+        <styled.Link exact to={'/'}>Button</styled.Link>
+    </styled.HomeButton>
+)
+
+const Title = () => (
+    <styled.Title>
+        Welcome Comment
+    </styled.Title>
 )
 
 class Home extends React.Component {    
     render () {
         return (
             <styled.HomeDiv>
-                <styled.HomeButton style={{
-                    position : "relative",
-                    top : "20rem",
-                    left : "10rem"
-                }}>
-                    <NavLink activeClassName={'selected'} to='/next' />
-                </styled.HomeButton>
+
+                <Title />    
+
+                <Button position={{
+                    position : "absolute",
+                    top : "80%",
+                    left : "20%"
+                }} />
+                <Button position={{
+                    position : "absolute",
+                    top : "80%",
+                    left : "70%"
+                }} />
             </styled.HomeDiv>
         )
     };

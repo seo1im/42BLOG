@@ -8,9 +8,9 @@ const BlogHome = styled.div`
 const TitleDiv = styled.div`
 	background-color : grey;
 
-	padding-top : 3rem;
 	width : 100%;
 	hegiht : 15rem;
+	padding-top : 3rem;
 
 	text-align : center;
 	line-height : 15rem;

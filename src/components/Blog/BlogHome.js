@@ -1,7 +1,7 @@
 import React				from 'react'
 import PropTypes 			from 'prop-types'
 
-import * as styled from "./BlogStyle"
+import * as styled from "./BlogHomeStyle"
 
 const Title = () => (
 	<styled.TitleDiv>

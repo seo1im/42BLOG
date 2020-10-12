@@ -4,13 +4,10 @@ import { NavLink }	from "react-router-dom"
 /* Div Style */
 // TODO : background images setting according width
 const HomeDiv = styled.div`
-	position	: relative;
-	top			: 3.1rem;
-
-	backgroud	: url(https://raw.githubusercontent.com/seo1im/42BLOG/master/src/images/Homebackground.jpg);
+	background : url(https://raw.githubusercontent.com/seo1im/42BLOG/master/src/images/Homebackground.jpg);
 	
 	width	: 100%;
-	height	: 50rem;	
+	height	: 100rem;	
 `
 
 const Title = styled.div`

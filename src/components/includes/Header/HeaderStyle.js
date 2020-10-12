@@ -8,10 +8,12 @@ const HeaderDiv = styled.div`
 	position :fixed;
 	top: 0;
 	left: 0;
+	z-index : 5;
 
-	width : 100%;
+	width : calc(100% - 1rem);
 	height : 3rem;
 	line-height : 3rem;
+	padding-left : 1rem;
 `
 
 const ButtonDiv = styled.div`
@@ -20,8 +22,6 @@ const ButtonDiv = styled.div`
 	
 	position : absolute;
 	right : 0rem;
-	
-
 `
 
 const Button = styled.div`

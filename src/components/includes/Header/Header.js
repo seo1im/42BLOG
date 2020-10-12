@@ -6,7 +6,10 @@ import * as styled			from "./HeaderStyle"
 
 const Button = ({link}) => (
 	<styled.Button>
-		<styled.Link exact to={"/" + link}>{link}</styled.Link>
+		<styled.Link exact to={
+			link !== "Home" ?
+			"/" + link : "/"
+		}>{link}</styled.Link>
 	</styled.Button>
 )
 

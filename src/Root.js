@@ -1,12 +1,13 @@
 import React from "react"
-import { BrowserRouter } from "react-router-dom"
-import { Header, Footer, Home } from "components"
+import { BrowserRouter, Route } from "react-router-dom"
+import { Header, Footer, Home, BlogHome } from "components"
 
 const Root = () => {
     return (
         <BrowserRouter basename="/42BLOG">
             <Header />
-            <Home />
+            <Route exact path="/" component={BlogHome}/>
+            <Route path="/Blog" component={BlogHome}/>
             <Footer />
         </BrowserRouter>
     );

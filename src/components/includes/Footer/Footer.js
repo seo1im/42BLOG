@@ -1,12 +1,14 @@
 import React				from 'react'
 import PropTypes 			from 'prop-types'
 
+import * as styled from "./FooterStyle"
+
 class Footer extends React.Component {
     render () {
         return (
-            <div>
+            <styled.Footer>
                 footer
-            </div>
+            </styled.Footer>
         )
     };
 }

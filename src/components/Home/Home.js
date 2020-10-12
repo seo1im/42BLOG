@@ -1,4 +1,4 @@
-    import React from 'react'
+import React from 'react'
 import router from "react-router-dom"
 import { Header, Footer } from "components"
 
@@ -25,17 +25,33 @@ class Home extends React.Component {
 
                 <Button position={{
                     position : "absolute",
-                    top : "80%",
+                    top : "70%",
                     left : "20%"
                 }} />
                 <Button position={{
                     position : "absolute",
-                    top : "80%",
+                    top : "70%",
                     left : "70%"
                 }} />
             </styled.HomeDiv>
         )
     };
+}
+
+Home.propTypes = {
+	/*
+		Set props type check
+		Use ImmutalbePropTypes, PropTypes module
+		Example :
+			user : PropTyps.string
+	*/
+}
+Home.defaultPros = {
+	/*
+		Set Default props if no props input
+		Exampel
+			user : 'No data. please check user field'
+	*/
 }
 
 export default Home;

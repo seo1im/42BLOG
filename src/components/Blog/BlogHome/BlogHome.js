@@ -3,9 +3,9 @@ import PropTypes 			from 'prop-types'
 
 import * as styled from "./BlogHomeStyle"
 
-const Title = () => (
+const Title = ({category}) => (
 	<styled.TitleDiv>
-		TITLE
+		{category ? category : "Seolim`s 42 BLOG"}
 	</styled.TitleDiv>
 )
 
@@ -17,10 +17,10 @@ const Article = () => (
 			<styled.ArticleHeaderP>Author</styled.ArticleHeaderP>
 		</styled.ArticleHeader>
 		<styled.ArticleTitle>
-			<styled.Link exact to="/" color="black">Title</styled.Link>
+			<styled.Link exact to="/Blog/cat" color="black">Title</styled.Link>
 		</styled.ArticleTitle>
 		<styled.ArticleDescription>
-			<styled.Link exact to="/" color= "black">Description</styled.Link>
+			<styled.Link exact to="/Blog/cat/1" color= "black">Description</styled.Link>
 		</styled.ArticleDescription>
 	</styled.Article>
 )
@@ -46,9 +46,11 @@ const Category = () => (
 
 class BlogHome extends React.Component {
     render () {
+		const { params } = this.props.match
+
         return (
             <styled.BlogHome>
-                <Title />
+                <Title category={params.cat}/>
 				<styled.BottomDiv>
 					<Articles />
 					<Category />

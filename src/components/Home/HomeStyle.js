@@ -7,7 +7,7 @@ const HomeDiv = styled.div`
 	position	: relative;
 	top			: 3.1rem;
 
-	background-color : grey;
+	backgroud	: url(https://raw.githubusercontent.com/seo1im/42BLOG/master/src/images/Homebackground.jpg);
 	
 	width	: 100%;
 	height	: 50rem;	

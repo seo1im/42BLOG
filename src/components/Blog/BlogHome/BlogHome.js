@@ -9,26 +9,35 @@ const Title = ({category}) => (
 	</styled.TitleDiv>
 )
 
-const Article = () => (
+const Article = ({info}) => (
 	<styled.Article>
 		<styled.ArticleHeader>
-			<styled.ArticleHeaderP>Cat</styled.ArticleHeaderP>
-			<styled.ArticleHeaderP>Date</styled.ArticleHeaderP>
-			<styled.ArticleHeaderP>Author</styled.ArticleHeaderP>
+			<styled.ArticleHeaderP>{info.Category}</styled.ArticleHeaderP>
+			<styled.ArticleHeaderP>{info.Date}</styled.ArticleHeaderP>
+			<styled.ArticleHeaderP>{info.Auther}</styled.ArticleHeaderP>
 		</styled.ArticleHeader>
 		<styled.ArticleTitle>
-			<styled.Link exact to="/Blog/cat" color="black">Title</styled.Link>
+			<styled.Link exact to={`/Blog/${info.Category}/${info.Id}`} color="black">{info.Title}</styled.Link>
 		</styled.ArticleTitle>
 		<styled.ArticleDescription>
-			<styled.Link exact to="/Blog/cat/1" color= "black">Description</styled.Link>
+			<styled.Link exact to={`/Blog/${info.Category}/${info.Id}`} color= "black">{info.Description}</styled.Link>
 		</styled.ArticleDescription>
 	</styled.Article>
 )
 
-const Articles = () => (
+const Articles = ({posts, category}) => (
+
 	<styled.Articles>
-		<Article/>
-		<Article/>
+		{
+			category ? 
+			posts.map((post, i) => {
+				if (post.arg.Category == category)
+					return <Article info={post.arg} key={i}/>
+			}) : 
+			posts.map((post, i) => {
+				return <Article info={post.arg} key={i}/>
+			})
+		}
 	</styled.Articles>
 )
 
@@ -36,23 +45,26 @@ const Category = () => (
 	<styled.CategoryDiv>
 		Category
 		<styled.Category>
-			<styled.Link exact to="/" color="grey">Cat</styled.Link>
+			<styled.Link exact to="/Blog/Cat1" color="grey">Cat1</styled.Link>
 		</styled.Category>
 		<styled.Category>
-			<styled.Link exact to="/" color="grey">Cat</styled.Link>
+			<styled.Link exact to="/Blog/Cat2" color="grey">Cat2</styled.Link>
 		</styled.Category>
 	</styled.CategoryDiv>
 )
 
 class BlogHome extends React.Component {
     render () {
-		const { params } = this.props.match
+		const { category } = this.props.match.params
+		const { posts } = this.props
+
+		console.log(this.props)
 
         return (
             <styled.BlogHome>
-                <Title category={params.cat}/>
+                <Title category={category}/>
 				<styled.BottomDiv>
-					<Articles />
+					<Articles posts={posts} category={category}/>
 					<Category />
 				</styled.BottomDiv>
             </styled.BlogHome>

@@ -4,9 +4,9 @@ import { Header, Footer } from "components"
 
 import * as styled from "./HomeStyle"
 
-const Button = ({position}) => (
+const Button = ({position, name}) => (
     <styled.HomeButton position={position}>
-        <styled.Link exact to={'/'}>Button</styled.Link>
+        <styled.Link exact to={'/Blog/'}>{name}</styled.Link>
     </styled.HomeButton>
 )
 
@@ -27,12 +27,12 @@ class Home extends React.Component {
                     position : "absolute",
                     top : "70%",
                     left : "20%"
-                }} />
+                }} name="BLOG" />
                 <Button position={{
                     position : "absolute",
                     top : "70%",
                     left : "70%"
-                }} />
+                }} name="PROFILE"/>
             </styled.HomeDiv>
         )
     };

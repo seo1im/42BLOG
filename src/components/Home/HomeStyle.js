@@ -15,7 +15,7 @@ const Title = styled.div`
 	position	: absolute;
 	top			: 30%;
 
-	font-size	: 3rem;
+	font-size	: 5rem;
 	text-align	: center;
 
 	width 		: 100%;
@@ -27,10 +27,12 @@ const HomeButton = styled.div`
 	top 		: ${props => props.position.top};
 	left		: ${props => props.position.left};
 
-	background-color : blue;
+	background-color : white;
+	border : solid 0.2rem;
+	border-radius: 0.5rem;
 	
-	line-height : 2rem;
 	text-align : center;
+	line-height : 4rem;
 
 	width	: 9rem;
 	height	: 4rem;

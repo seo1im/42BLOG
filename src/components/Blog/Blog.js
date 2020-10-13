@@ -1,27 +1,21 @@
 import React		from 'react'
 import { Route } 	from 'react-router-dom'
 import PropTypes 	from 'prop-types'
-import { Record }	from "immutable"
 
 import BlogHome	from "./BlogHome/BlogHome"
 import BlogPost from "./BlogPost/BlogPost"
 
+import posts from "posts"
+
 class Blog extends React.Component {
-	constructor (props)	{
-		super(props)
-
-		this.state = {
-			//TODO : Post Setting
-		}
-	}
-
     render () {
 		const match = this.props.match
+
         return (
 			<div>
-				<Route exact path={match.path} component={BlogHome} />
-				<Route exact path={`${match.path}/:cat`} component={BlogHome}/>
-				<Route path={`${match.path}/:cat/:post`} component={BlogPost}/>
+				<Route exact path={match.path} render={({match})=>(<BlogHome match={match} posts={posts}/>)} />
+				<Route exact path={`${match.path}/:category`} render={({match})=>(<BlogHome match={match} posts={posts}/>)}/>
+				<Route path={`${match.path}/:category/:id`} render={({match})=>(<BlogPost match={match} posts={posts}/>)}/>
 			</div>
         )
     };

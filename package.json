@@ -34,9 +34,13 @@
     "react-dom": "^16.13.1",
     "react-immutable-proptypes": "^2.2.0",
     "react-router-dom": "^5.2.0",
+    "strip-indent": "^3.0.0",
     "styled-components": "^5.2.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@hugmanrique/react-markdown-loader": "0.0.2"
   }
 }

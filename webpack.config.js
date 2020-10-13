@@ -22,6 +22,14 @@ module.exports = {
                     loader: 'babel-loader'
                 }
             },
+            {
+                test: /\.md$/,
+                exclude: /node_modules/,
+                loader : [
+                    "babel-loader",
+                    "@hugmanrique/react-markdown-loader"
+                ]
+            },
         ]
     },
     plugins: [

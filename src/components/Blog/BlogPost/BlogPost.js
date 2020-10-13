@@ -3,27 +3,37 @@ import PropTypes 			from 'prop-types'
 
 import * as styled from "./BlogPostStyle"
 
-const Title = () => (
+const Title = ({info}) => (
 	<styled.TitleDiv>
-		<styled.Title>Title</styled.Title>
-		<styled.TitleP>Cat</styled.TitleP>
-		<styled.TitleP>Date</styled.TitleP>
-		<styled.TitleP>Author</styled.TitleP>
+		<styled.Title>{info.Title}</styled.Title>
+		<styled.TitleP>{info.Category}</styled.TitleP>
+		<styled.TitleP>{info.Date}</styled.TitleP>
+		<styled.TitleP>{info.Auther}</styled.TitleP>
 	</styled.TitleDiv>
 )
 
-const Content = () => (
+const Content = ({post}) => {
+	return(
 	<styled.Content>
-		Content Box
+		<post.content />
 	</styled.Content>
-)
+)}
 
 class BlogPost extends React.Component {
     render () {
+		const { category, id } = this.props.match.params;
+		const { posts } = this.props
+
+		const post = posts.filter(post => (
+			post.arg.Id == id && post.arg.Category == category
+		))[0];
+
+		console.log(post.content);
+
         return (
             <styled.PostDiv>
-                <Title />
-				<Content />
+                <Title info={post.arg}/>
+				<Content post={post}/>
             </styled.PostDiv>
         )
     };

@@ -1,5 +1,7 @@
 const path = require('path')  
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const marked = require("marked")
+const renderer = new marked.Renderer()
 
 module.exports = {
     entry: './src/index.js',
@@ -25,11 +27,32 @@ module.exports = {
             {
                 test: /\.md$/,
                 exclude: /node_modules/,
-                loader : [
-                    "babel-loader",
-                    "@hugmanrique/react-markdown-loader"
-                ]
+                use : [
+                    {
+                        loader : "frontmatter-markdown-loader",
+                        options : {
+                            mode : ['react-component'],
+                            react : {
+                                root : "markdown"
+                            }
+                        }
+                    }
+                ]   
             },
+            {
+                test: /\.css$/,
+                use : [
+                    {
+                        loader : "style-loader"
+                    },
+                    {
+                        loader : "css-loader",
+                        options : {
+                            modules : true
+                        }
+                    }
+                ]
+            }
         ]
     },
     plugins: [

@@ -15,7 +15,7 @@ const Title = ({info}) => (
 const Content = ({post}) => {
 	return(
 	<styled.Content>
-		<post.content />
+		<post.react/>
 	</styled.Content>
 )}
 
@@ -25,14 +25,12 @@ class BlogPost extends React.Component {
 		const { posts } = this.props
 
 		const post = posts.filter(post => (
-			post.arg.Id == id && post.arg.Category == category
+			post.attributes.Id == id && post.attributes.Category == category
 		))[0];
-
-		console.log(post.content);
 
         return (
             <styled.PostDiv>
-                <Title info={post.arg}/>
+                <Title info={post.attributes}/>
 				<Content post={post}/>
             </styled.PostDiv>
         )

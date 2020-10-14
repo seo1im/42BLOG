@@ -31,11 +31,11 @@ const Articles = ({posts, category}) => (
 		{
 			category ? 
 			posts.map((post, i) => {
-				if (post.arg.Category == category)
-					return <Article info={post.arg} key={i}/>
+				if (post.attributes.Category == category)
+					return <Article info={post.attributes} key={i}/>
 			}) : 
 			posts.map((post, i) => {
-				return <Article info={post.arg} key={i}/>
+				return <Article info={post.attributes} key={i}/>
 			})
 		}
 	</styled.Articles>

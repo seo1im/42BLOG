@@ -9,8 +9,8 @@ Auther : Lim
 
 # Title
 
-```=css
-code block
+```javascript
+import text
 ```
 
 `inline-block`

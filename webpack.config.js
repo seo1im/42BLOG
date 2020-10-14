@@ -1,7 +1,10 @@
 const path = require('path')  
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const marked = require("marked")
-const renderer = new marked.Renderer()
+const Mode = require('frontmatter-markdown-loader/mode')
+const markdownIt = require('markdown-it')
+const markdownItPrism = require('markdown-it-prism')
+const hljs = require("highlight.js")
+
 
 module.exports = {
     entry: './src/index.js',
@@ -31,9 +34,21 @@ module.exports = {
                     {
                         loader : "frontmatter-markdown-loader",
                         options : {
-                            mode : ['react-component'],
+                            mode : [Mode.REACT],
                             react : {
-                                root : "markdown"
+                                root : 'markdown'
+                            },
+                            markdownIt : {
+                                highlight : function (str, lang) {
+                                    if (lang && hljs.getLanguage(lang)) {
+                                        try {
+                                            return '<pre class="hljs"><code>' +
+                                                 hljs.highlight(lang, str, true).value +
+                                            '</code></pre>';
+                                        } catch (__) {}
+                                    }
+                                    return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+                                }
                             }
                         }
                     }

@@ -14,12 +14,18 @@ const Title = ({info}) => (
 
 const Content = ({post}) => {
 	return(
-	<styled.Content>
-		<post.react/>
-	</styled.Content>
+		<styled.Content>
+			<post.react />
+		</styled.Content>
 )}
 
 class BlogPost extends React.Component {
+	
+
+	componentDidMount() {
+		
+	}
+
     render () {
 		const { category, id } = this.props.match.params;
 		const { posts } = this.props

@@ -39,6 +39,7 @@ module.exports = {
                                 root : 'markdown'
                             },
                             markdownIt : {
+                                html : true,
                                 highlight : function (str, lang) {
                                     if (lang && hljs.getLanguage(lang)) {
                                         try {
@@ -47,7 +48,7 @@ module.exports = {
                                             '</code></pre>';
                                         } catch (__) {}
                                     }
-                                    return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+                                    return '<pre class="hljs"><code>' + markdownIt().utils.escapeHtml(str) + '</code></pre>';
                                 }
                             }
                         }

@@ -21,9 +21,7 @@ const TitleDiv = styled.div`
 const BottomDiv = styled.div`
 	background-color : white;
 	display :flex;
-	
 	width : 100%;
-	height : 60rem;
 `
 
 const Articles = styled.div`
@@ -33,8 +31,9 @@ const Articles = styled.div`
 	margin-left : calc((100% - 60rem) / 2);
 	
 	@media only screen and (max-width: 60rem) {
-		margin-left : 0;
-		width : 100%
+		margin-left : 1.5rem;
+		margin-right : 1.5rem;
+		width : calc(100% - 3rem);
 	}
 `
 
@@ -62,7 +61,7 @@ const ArticleHeaderP = styled.p`
 
 const ArticleTitle = styled.div`
 	padding-left : 1rem;
-	
+	margin-bottom : 2rem;
 	font-size : 4rem;
 `
 

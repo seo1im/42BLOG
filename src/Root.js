@@ -6,7 +6,7 @@ const Root = () => {
     return (
         <BrowserRouter basename="/42BLOG">
             <Header />
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/" component={Blog}/>
             <Route path="/Blog" component={Blog}/>
             <Footer />
         </BrowserRouter>

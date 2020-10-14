@@ -34,6 +34,9 @@ class BlogPost extends React.Component {
 			post.attributes.Id == id && post.attributes.Category == category
 		))[0];
 
+		if (!post)
+			post = posts[0];
+
         return (
             <styled.PostDiv>
                 <Title info={post.attributes}/>

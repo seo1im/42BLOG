@@ -18,7 +18,7 @@ const TitleDiv = styled.div`
 	@media only screen and (max-width: 60rem) {
 		margin-left : 0;
 		margin-right : 0;
-		width : 100%
+		width : 100%;
 	}
 `
 
@@ -35,15 +35,14 @@ const TitleP = styled.p`
 
 const Content = styled.div`	
 	width : 60rem;
-	height : 60rem;
 	margin-top : 2rem;
 	margin-left : calc((100% - 58rem) / 2);
 	margin-right : calc((100% - 58rem) / 2);	
 
 	@media only screen and (max-width: 60rem) {
-		margin-left : 0;
-		margin-right : 0;
-		width : 100%
+		margin-left : 2.5rem;
+		margin-right : 2.5rem;
+		width : calc(100% - 5rem);
 	}
 `
 

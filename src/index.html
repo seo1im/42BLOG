@@ -12,10 +12,57 @@
           margin :0;
           padding: 0;
       }
+      .markdown h1, h2, h3, h4, h5, h6 {
+        color : #404040;
+      }
+      .markdown {
+        font-size : 1.2rem;
+      }
       .markdown pre {
-         padding: 0.5rem;
-         font-size : 1rem;
-         border-radius: 0.5rem;
+          margin : 0.5rem 0.5rem;
+          padding: 0.5rem;
+          font-size : 1rem;
+          border-radius: 0.5rem;
+      }
+      .markdown blockquote {
+        width:calc(100% - 2rem);
+        margin : 0 0 0.5rem 0;
+        color: #555555;
+        padding:0.3em 0.5rem;
+        border-left:8px solid #78C0A8 ;
+        background:#EDEDED;
+      }
+      .markdown blockquote p{
+        font-size : 1.2rem;
+        margin : 0;
+        padding : 0.2rem 0;
+      }
+      .markdown p {
+        color : #505050;
+        margin-left : 0.5rem;
+      }
+      .markdown li {
+        margin-bottom: 0.5rem;
+      }
+      .markdown ol {
+        padding-inline-start: 1.5rem;
+        font-weight: bold;
+      }
+      .markdown ol li ul{
+        font-weight: normal;
+      }
+      .markdown ol li ol{
+        font-weight: normal;
+      }
+      .markdown ul {
+        padding-inline-start: 1.5rem;
+        font-weight: bold;
+      }
+      .markdown ul li ul{
+        font-weight: normal;
+      }
+      .markdown ul li ol{
+        font-weight: normal;
       }
     </style>
 

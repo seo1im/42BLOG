@@ -5,9 +5,11 @@ import { NavLink }	from "react-router-dom"
 // TODO : background images setting according width
 const HomeDiv = styled.div`
 	background : url(https://raw.githubusercontent.com/seo1im/42BLOG/master/src/images/Homebackground.jpg);
+	background-repeat : no-repeat;
+
 	
 	width	: 100%;
-	height	: 100rem;	
+	height	: 60rem;	
 `
 
 const Title = styled.div`
@@ -32,9 +34,10 @@ const HomeButton = styled.div`
 	border-radius: 0.5rem;
 	
 	text-align : center;
+	font-size : 2.5rem;
 	line-height : 4rem;
 
-	width	: 9rem;
+	width	: 12rem;
 	height	: 4rem;
 `
 

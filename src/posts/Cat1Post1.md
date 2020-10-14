@@ -49,3 +49,5 @@ In first grade I learned that 2 + 2.
 `block`
 
 > quote
+
+![image](https://raw.githubusercontent.com/seo1im/42BLOG/master/src/images/posts/test.jpg)

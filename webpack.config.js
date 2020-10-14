@@ -34,10 +34,7 @@ module.exports = {
                     {
                         loader : "frontmatter-markdown-loader",
                         options : {
-                            mode : [Mode.REACT],
-                            react : {
-                                root : 'markdown'
-                            },
+                            mode : [Mode.HTML],
                             markdownIt : {
                                 html : true,
                                 highlight : function (str, lang) {

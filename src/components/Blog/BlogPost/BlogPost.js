@@ -15,17 +15,11 @@ const Title = ({info}) => (
 const Content = ({post}) => {
 	return(
 		<styled.Content>
-			<post.react />
+			<div dangerouslySetInnerHTML={{__html : post.html}} className="markdown"/>
 		</styled.Content>
 )}
 
 class BlogPost extends React.Component {
-	
-
-	componentDidMount() {
-		
-	}
-
     render () {
 		const { category, id } = this.props.match.params;
 		const { posts } = this.props

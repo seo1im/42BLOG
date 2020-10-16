@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { NavLink } from "react-router-dom"
 
 const PostDiv = styled.div`
 	
@@ -57,6 +58,17 @@ const Content = styled.div`
 	}
 `
 
+const Button = styled.div`
+	width : 10rem;
+	border-left : solid 5px #40a899;
+`
+
+const Link = styled(NavLink)`
+	text-decoration : none;
+	font-weight : bold;
+	color : grey;
+`
+
 export {
 PostDiv,
 	TitleDiv,
@@ -64,4 +76,6 @@ PostDiv,
 		TitleP,
 		TitleImg,
 	Content,
+	Button,
+		Link
 }

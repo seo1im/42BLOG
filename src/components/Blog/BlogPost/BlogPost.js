@@ -3,6 +3,14 @@ import PropTypes 			from 'prop-types'
 
 import * as styled from "./BlogPostStyle"
 
+const Button = ({link}) => (
+	<styled.Button>
+		<styled.Link to={link}>
+			BUTTON
+		</styled.Link>
+	</styled.Button>
+)
+
 const Title = ({info}) => (
 	<styled.TitleDiv>
 		<styled.TitleP>{info.Category}</styled.TitleP>
@@ -36,6 +44,12 @@ class BlogPost extends React.Component {
             <styled.PostDiv>
                 <Title info={post.attributes}/>
 				<Content post={post}/>
+				{post.attributes.pre !== 0 ? <Button 
+					style={{position : "absolute", left : 0}}
+					link={`Blog/${post.attributes.Category}/${post.attributes.pre}`} />: <div/>}
+				{post.attributes.next !== 0 ? <Button
+					style={{position : "absolute", right : 0}}
+					link={`Blog/${post.attributes.Category}/${post.attributes.next}`}/>: <div/>}
             </styled.PostDiv>
         )
     };

@@ -5,6 +5,8 @@ Title : Libft 개요
 Description : Libft 프로젝트에 대한 기본적인 내용
 Date : 2020, 10, 16 (Fri)
 Auther : seolim
+pre : 0
+next : 2
 ---
 
 # Libft 개요

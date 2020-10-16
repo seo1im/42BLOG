@@ -8,7 +8,6 @@ const Root = () => {
             <Header />
             <Route exact path="/" component={Home}/>
             <Route path="/Blog" component={Blog}/>
-            <Footer />
         </BrowserRouter>
     );
 }

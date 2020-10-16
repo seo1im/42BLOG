@@ -6,20 +6,21 @@ const BlogHome = styled.div`
 `
 
 const TitleDiv = styled.div`
-	background-color : grey;
+	background-color : black;
 
 	width : 100%;
-	hegiht : 15rem;
+	height : 25rem;
 	padding-top : 3rem;
 
 	text-align : center;
-	line-height : 15rem;
+	color : white;
+	line-height : 25rem;
 	font-size : 5rem;
-
 `
 
 const BottomDiv = styled.div`
 	background-color : white;
+	margin-top : 3rem;
 	display :flex;
 	width : 100%;
 `
@@ -27,7 +28,7 @@ const BottomDiv = styled.div`
 const Articles = styled.div`
 	background-color : white;
 	
-	width : 60rem;
+	width : 50rem;
 	margin-left : calc((100% - 60rem) / 2);
 	
 	@media only screen and (max-width: 60rem) {
@@ -41,13 +42,13 @@ const Article = styled.div`
 	background-color : white;
 	border-bottom : solid 0.01rem grey;
 	
-	width : 58rem;
-	height : 20rem;
+	width : 48rem;
+	min-height : 15rem;
 	margin : 0 1rem;
 
 	@media only screen and (max-width: 60rem) {
 		width : calc(100% - 2rem);
-	}	
+	}
 `
 
 const ArticleHeader = styled.div`
@@ -56,18 +57,29 @@ const ArticleHeader = styled.div`
 const ArticleHeaderP = styled.p`
 	display : inline-block;
 	margin : 0 1rem 0 0;
-	font-size : 1rem;
+	font-size : 1.2rem;
+`
+
+const ArticleHeaderImg = styled.img.attrs({
+	src : "https://raw.githubusercontent.com/seo1im/42BLOG/master/src/images/backSource/profile.jpg"
+})`
+	width : 3rem;
+	margin-right : 1rem;
+	border-radius : 1rem;
 `
 
 const ArticleTitle = styled.div`
 	padding-left : 1rem;
-	margin-bottom : 2rem;
-	font-size : 4rem;
+	margin-left : 0.3rem;
+	margin-bottom : 1rem;
+	font-size : 3rem;
+	font-weight : bold;
 `
 
 const ArticleDescription = styled.div`
 	padding-left : 1rem;
 
+	margin-left : 0.5rem;
 	font-size : 1rem;
 	word-break : break-all;
 `
@@ -75,23 +87,22 @@ const ArticleDescription = styled.div`
 const CategoryDiv = styled.div`
 	background-color : white;
 	
-	width : 15rem;
+	width : 10rem;
 	margin-top : 2rem;
-	margin-right : calc((100% - 60rem)/2 - 15rem);
+	margin-right : calc((100% - 65rem)/2);
 	padding-left : 1rem;
 
 	font-size : 1.5rem;
+	color : #50c79f;
 
-	@media only screen and (max-width: 90rem) {
+	@media only screen and (max-width: 60rem) {
 		display : none;
 	}
 `
 
 const Category = styled.p`
-	margin : 1rem 0.5rem;
-	font-size : 1.3rem;
-	
-	color : grey;
+	margin : 0.5rem 0 0 0;
+	font-size : 1.1rem;
 `
 
 const Link = styled(NavLink)`
@@ -107,6 +118,7 @@ BlogHome,
 			Article, 
 				ArticleHeader,
 					ArticleHeaderP,
+					ArticleHeaderImg,
 				ArticleTitle,
 				ArticleDescription,
 		CategoryDiv,

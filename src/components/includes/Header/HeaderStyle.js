@@ -11,9 +11,17 @@ const HeaderDiv = styled.div`
 	z-index : 5;
 
 	width : calc(100% - 1rem);
-	height : 3rem;
-	line-height : 3rem;
+	height : 4rem;
+	line-height : 4rem;
 	padding-left : 1rem;
+`
+
+const HeaderTitle = styled.p`
+	display : inline-block;
+	margin : 0;
+	position : absolute;
+	left : 6rem;
+	font-size : 1.5rem;
 `
 
 const ButtonDiv = styled.div`
@@ -38,4 +46,9 @@ const Link = styled(NavLink)`
 	color : black;
 `
 
-export { HeaderDiv, Button, Link, ButtonDiv };
+export {
+HeaderDiv, 
+	HeaderTitle,
+	ButtonDiv,
+		Button,
+Link  };

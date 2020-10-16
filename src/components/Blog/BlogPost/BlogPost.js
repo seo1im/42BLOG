@@ -5,10 +5,11 @@ import * as styled from "./BlogPostStyle"
 
 const Title = ({info}) => (
 	<styled.TitleDiv>
-		<styled.Title>{info.Title}</styled.Title>
 		<styled.TitleP>{info.Category}</styled.TitleP>
 		<styled.TitleP>{info.Date}</styled.TitleP>
-		<styled.TitleP>{info.Auther}</styled.TitleP>
+		<styled.TitleP><b>{info.Auther}</b></styled.TitleP>
+		<styled.Title>{info.Title}</styled.Title>
+		<styled.TitleP style={{margin : "0.5rem 0 0 2.5rem"}}>{info.Description}</styled.TitleP>
 	</styled.TitleDiv>
 )
 

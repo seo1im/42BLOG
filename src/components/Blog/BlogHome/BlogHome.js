@@ -2,6 +2,7 @@ import React				from 'react'
 import PropTypes 			from 'prop-types'
 
 import * as styled from "./BlogHomeStyle"
+import information from '../../../information/information'
 
 const Title = ({category}) => (
 	<styled.TitleDiv>
@@ -12,9 +13,11 @@ const Title = ({category}) => (
 const Article = ({info}) => (
 	<styled.Article>
 		<styled.ArticleHeader>
+			<styled.ArticleHeaderImg />
 			<styled.ArticleHeaderP>{info.Category}</styled.ArticleHeaderP>
 			<styled.ArticleHeaderP>{info.Date}</styled.ArticleHeaderP>
 			<styled.ArticleHeaderP>{info.Auther}</styled.ArticleHeaderP>
+			
 		</styled.ArticleHeader>
 		<styled.ArticleTitle>
 			<styled.Link exact to={`/Blog/${info.Category}/${info.Id}`} color="black">{info.Title}</styled.Link>
@@ -41,22 +44,21 @@ const Articles = ({posts, category}) => (
 	</styled.Articles>
 )
 
-const Category = () => (
+const Category = ({categories}) => (
 	<styled.CategoryDiv>
-		Category
-		<styled.Category>
-			<styled.Link exact to="/Blog/Cat1" color="grey">Cat1</styled.Link>
-		</styled.Category>
-		<styled.Category>
-			<styled.Link exact to="/Blog/Cat2" color="grey">Cat2</styled.Link>
-		</styled.Category>
+		<b>CATEGOTIES</b>
+		{categories.map((category ,i) => (
+			<styled.Category id={i}>
+				<styled.Link exact to={`/Blog/${category}`} color="black">{category}</styled.Link>
+			</styled.Category>
+		))}
 	</styled.CategoryDiv>
 )
 
 class BlogHome extends React.Component {
     render () {
 		const { category } = this.props.match.params
-		const { posts } = this.props
+		const { posts, information } = this.props
 
 		console.log(this.props)
 
@@ -65,7 +67,7 @@ class BlogHome extends React.Component {
                 <Title category={category}/>
 				<styled.BottomDiv>
 					<Articles posts={posts} category={category}/>
-					<Category />
+					<Category categories={information.categories}/>
 				</styled.BottomDiv>
             </styled.BlogHome>
         )

@@ -4,7 +4,7 @@ import { NavLink }	from "react-router-dom"
 /* Div Style */
 // TODO : background images setting according width
 const HomeDiv = styled.div`
-	background : url(https://raw.githubusercontent.com/seo1im/42BLOG/master/src/images/Homebackground.jpg);
+	background : url(https://raw.githubusercontent.com/seo1im/42BLOG/master/src/images/backSource/Homebackground.jpg);
 	background-repeat : no-repeat;
 
 	

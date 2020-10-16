@@ -6,6 +6,7 @@ import BlogHome	from "./BlogHome/BlogHome"
 import BlogPost from "./BlogPost/BlogPost"
 
 import posts from "posts"
+import information from "information/information"
 
 class Blog extends React.Component {
     render () {
@@ -13,9 +14,9 @@ class Blog extends React.Component {
 
         return (
 			<div>
-				<Route exact path={match.path} render={({match})=>(<BlogHome match={match} posts={posts}/>)} />
-				<Route exact path={`${match.path}/:category`} render={({match})=>(<BlogHome match={match} posts={posts}/>)}/>
-				<Route path={`${match.path}/:category/:id`} render={({match})=>(<BlogPost match={match} posts={posts}/>)}/>
+				<Route exact path={match.path} render={({match})=>(<BlogHome match={match} posts={posts} information={information}/>)} />
+				<Route exact path={`${match.path}/:category`} render={({match})=>(<BlogHome match={match} posts={posts} information={information}/>)}/>
+				<Route path={`${match.path}/:category/:id`} render={({match})=>(<BlogPost match={match} posts={posts} information={information}/>)}/>
 			</div>
         )
     };

@@ -17,7 +17,9 @@ class Header extends React.Component {
     render () {
         return (
             <styled.HeaderDiv>
-                Header(Always Shown)
+				<img src={"https://raw.githubusercontent.com/seo1im/42BLOG/master/src/images/backSource/profile.jpg"}
+					width="50" style={{margin : "0.5rem"}}/>
+				<styled.HeaderTitle><b>42 seolim</b> <i><span style={{fontSize : "1rem"}}>BLOG</span></i></styled.HeaderTitle>
 				<styled.ButtonDiv>
 					<Button link={"Home"}/>
 					<Button link={"Blog"}/>

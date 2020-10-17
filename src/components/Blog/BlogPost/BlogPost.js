@@ -51,11 +51,11 @@ class BlogPost extends React.Component {
                 <Title info={post.attributes}/>
 				<Content post={post}/>
 				{post.attributes.pre !== 0 ? <Button 
-					link={`Blog/${post.attributes.Category}/${post.attributes.pre}`}
+					link={`/Blog/${post.attributes.Category}/${post.attributes.pre}`}
 					str={"Previous"} />: <div/>}
 				{post.attributes.next !== 0 ? <Button
-					link={`Blog/${post.attributes.Category}/${post.attributes.next}`}
-					key={"Next"}/>: <div/>}
+					link={`/Blog/${post.attributes.Category}/${post.attributes.next}`}
+					str={"Next"}/>: <div/>}
             </styled.PostDiv>
         )
     };

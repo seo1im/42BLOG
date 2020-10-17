@@ -45,7 +45,7 @@ class BlogPost extends React.Component {
 
 		if (!post)
 			post = posts[0];
-
+			
         return (
             <styled.PostDiv>
                 <Title info={post.attributes}/>

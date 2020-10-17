@@ -3,12 +3,18 @@ import PropTypes 			from 'prop-types'
 
 import * as styled from "./BlogPostStyle"
 
-const Button = ({link}) => (
-	<styled.Button>
+const Button = ({link, str}) => (
+	str === "Previous" ? 
+		<styled.ButtonLeft>
+			<styled.Link to={link}>
+				{str}
+			</styled.Link>
+		</styled.ButtonLeft> :
+		<styled.ButtonRight>
 		<styled.Link to={link}>
-			BUTTON
+			{str}
 		</styled.Link>
-	</styled.Button>
+	</styled.ButtonRight>
 )
 
 const Title = ({info}) => (
@@ -45,11 +51,11 @@ class BlogPost extends React.Component {
                 <Title info={post.attributes}/>
 				<Content post={post}/>
 				{post.attributes.pre !== 0 ? <Button 
-					style={{position : "absolute", left : 0}}
-					link={`Blog/${post.attributes.Category}/${post.attributes.pre}`} />: <div/>}
+					link={`Blog/${post.attributes.Category}/${post.attributes.pre}`}
+					str={"Previous"} />: <div/>}
 				{post.attributes.next !== 0 ? <Button
-					style={{position : "absolute", right : 0}}
-					link={`Blog/${post.attributes.Category}/${post.attributes.next}`}/>: <div/>}
+					link={`Blog/${post.attributes.Category}/${post.attributes.next}`}
+					key={"Next"}/>: <div/>}
             </styled.PostDiv>
         )
     };

@@ -58,9 +58,34 @@ const Content = styled.div`
 	}
 `
 
-const Button = styled.div`
-	width : 10rem;
+const ButtonLeft = styled.div`
+	background-color : #EDEDED;
 	border-left : solid 5px #40a899;
+
+	position : absolute;
+	left : 3rem;
+
+	width : 10rem;
+	height : 2.5rem;
+	margin-bottom : 3rem;
+	padding-left : 2rem;
+
+	line-height : 2.5rem;
+`
+
+const ButtonRight = styled.div`
+	background-color : #EDEDED;
+	border-right : solid 5px #40a899;
+
+	position : absolute;
+	right : 3rem;
+
+	width : 10rem;
+	height : 2.5rem;
+	margin-bottom : 3rem;
+	padding-left : 2rem;
+
+	line-height : 2.5rem;
 `
 
 const Link = styled(NavLink)`
@@ -76,6 +101,7 @@ PostDiv,
 		TitleP,
 		TitleImg,
 	Content,
-	Button,
+	ButtonLeft,
+	ButtonRight,
 		Link
 }

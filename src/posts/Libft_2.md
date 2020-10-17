@@ -1,12 +1,12 @@
 ---
 Category : Libft
 Id : 2
-Title : mem function(Libft)
+Title : "Libft : mem function"
 Description : mem function
 Date : 2020, 10, 16 (Fri)
 Auther : seolim
 pre : 1
-next : 0
+next : 4
 ---
 
 

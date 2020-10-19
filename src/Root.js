@@ -10,7 +10,6 @@ const Root = () => {
                 <Scrolltop />
                 <Route exact path="/" component={Home}/>
                 <Route path="/Blog" component={Blog}/>
-                <Footer />
             </Suspense>
         </BrowserRouter>
     );

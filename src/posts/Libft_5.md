@@ -6,7 +6,7 @@ Description : "str 함수들과 ctype의 is 함수들을 알아본다"
 Date : 2020, 10, 19 (Mon)
 Auther : seolim
 pre : 4
-next : 0
+next : 6
 ---
 
 

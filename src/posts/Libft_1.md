@@ -43,6 +43,10 @@ char* strchr(char* str, int character);
 
 char* strrchr(char* str, int character);
 
+char *strnstr(const char *big, const char *little, size_t len);
+
+int strncmp(const char* str1, const char* str2, size_t num);
+
 int atoi(const char* str);
 
 int isalpha(int c);

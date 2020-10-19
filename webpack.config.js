@@ -13,7 +13,6 @@ module.exports = {
     output: {                                          
         path: path.join(__dirname, '/build'),
         filename: '[name].bundle.js',
-        chunkFilename : `[id].chunk.js`,
         
     },
     resolve: {

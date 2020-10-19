@@ -27,7 +27,7 @@ const TitleDiv = styled.div`
 const Title = styled.div`
 	margin-left : 2rem;
 	font-size : 4rem;
-	word-break : break-all;
+	word-break : keep-all;
 `
 
 const TitleP = styled.p`

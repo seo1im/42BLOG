@@ -6,11 +6,15 @@ Description : mem function
 Date : 2020, 10, 16 (Fri)
 Auther : seolim
 pre : 1
-next : 4
+next : 3
 ---
 
 
 # Libft mem function
+> Link
+
+[https://github.com/seo1im/Libft](https://github.com/seo1im/Libft)
+
 > Caution
 
 본 문서를 포함한 블로그의 모든 내용은 <b>42 innovation academy</b>의 과제의 작성자의 해석 및 풀이 등으로 이루어져 있습니다.</br>본인이 42 교육생이거나 42 교육을 희망하는 분이라면 글을 먼저 보기보다는 고민해보고 읽어보기를 추천드립니다.

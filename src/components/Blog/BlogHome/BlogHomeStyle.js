@@ -45,6 +45,7 @@ const Article = styled.div`
 	width : 48rem;
 	min-height : 15rem;
 	margin : 0 1rem;
+	padding-bottom : 2rem;
 
 	@media only screen and (max-width: 60rem) {
 		width : calc(100% - 2rem);
@@ -81,7 +82,7 @@ const ArticleDescription = styled.div`
 
 	margin-left : 0.5rem;
 	font-size : 1rem;
-	word-break : break-all;
+	word-break : keep-all;
 `
 
 const CategoryDiv = styled.div`

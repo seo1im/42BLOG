@@ -5,11 +5,14 @@ Title : "Libft : str function"
 Description : mem function
 Date : 2020, 10, 17 (Sat)
 Auther : seolim
-pre : 2
-next : 0
+pre : 3
+next : 5
 ---
 
 # Libft str function
+> Link
+
+[https://github.com/seo1im/Libft](https://github.com/seo1im/Libft)
 
 > Caution
 

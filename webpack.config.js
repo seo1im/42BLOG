@@ -7,10 +7,14 @@ const hljs = require("highlight.js")
 
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        index : './src/index.js'
+    },
     output: {                                          
         path: path.join(__dirname, '/build'),
-        filename: 'bundle.js'
+        filename: '[name].bundle.js',
+        chunkFilename : `[id].chunk.js`,
+        
     },
     resolve: {
         modules: [

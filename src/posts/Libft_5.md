@@ -70,7 +70,6 @@ char *strnstr(const char *str, const char *find, size_t len);
     </tr>
 </table>
 
-
 문자열(str)내에 특정 문자열(find)과 같은 첫번째 문자열을 찾는다. 성공할시 같은 문자열의 첫 주소를 반환한다. 아래와 같이 동작된다.
 
 ```c

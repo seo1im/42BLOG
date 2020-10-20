@@ -8,39 +8,51 @@
         color : #404040;
         font-size : 1.1rem;
       }
-      .markdown h1, h3, h5{
-        margin : 4rem 0 0.5rem 0.5rem;
+      .markdown h1 {
+        font-size : 4rem;
+        margin : 0;
+      }
+      .markdown h3 {
+        margin : 1.3rem 0 0.5rem 1rem;
+        font-size: 1.5rem;
       }
       .markdown h5{
         margin-top : 1rem;
+        margin-bottom : 0.3rem;
+        font-size : 1.3rem;
         color :#942a00;
       }
+      .markdown h2, h3, h4, h5 {
+        margin-left : 1rem;
+      }
       .markdown pre {
-          margin : 1rem 0.5rem;
-          padding: 1.5rem 0.5rem;
+          margin : 1rem 1rem;
+          padding: 1.5rem 1rem;
           font-size : 1rem;
-          border-radius: 0.5rem;
       }
       .markdown blockquote {
         width:calc(100% - 2rem);
-        margin : 4rem 0 1rem 0;
+        margin : 5rem 0 0 0;
         color: #555555;
-        padding:0.3em 0.5rem;
-        border-left:8px solid #78C0A8 ;
-        background:#EDEDED;
+        padding: 0.4rem 0.5rem;
+        border-left:4px solid black ;
+        
       }
       .markdown blockquote p{
-        font-size : 1.2rem;
+        margin : 0;
+        font-size : 1.5rem;
         font-weight: bold;
-        margin : 0.5rem 0 0.5rem 0;
         padding : 0.2rem 0;
       }
+
       .markdown p {
+        margin : 0;
         color : #202020;
-        margin-left : 0.5rem;
+        margin-left : 1rem;
         word-break: keep-all;
       }
       .markdown li {
+        margin-left: 1rem;
         margin-bottom: 0.5rem;
       }
       .markdown ol {
@@ -69,7 +81,8 @@
       }
       .markdown table {
         width: calc(100% - 15rem);
-        margin-left: 0.5rem;
+        margin-left: 1rem;
+        margin-bottom : 1.5rem;
         border-top: 1px solid #444444;
         border-collapse: collapse;
       }

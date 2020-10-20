@@ -8,31 +8,32 @@ const PostDiv = styled.div`
 const TitleDiv = styled.div`
 	border-bottom : solid 0.01rem grey;
 
-	width : 50rem;
+	width : 100%;
 	margin-top : 3rem;
 	padding-top : 2rem;
-	padding-bottom : 1.5rem;
-	margin-left : calc((100% - 50rem) / 2);
-	margin-right : calc((100% - 50rem) / 2);	
+	padding-bottom : 4rem;
+	padding-left : calc((100% - 50rem) / 2);
+	padding-right : calc((100% - 50rem) / 2);
 	min-height : 10rem;
 	
 
 	@media only screen and (max-width: 50rem) {
-		margin-left : 1rem;
-		margin-right : 1rem;
+		padding-left : calc((100% - 50rem) / 2);
+		padding-right : calc((100% - 50rem) / 2);
 		width : calc(100% - 2rem);
 	}
 `
 
 const Title = styled.div`
-	margin-left : 2rem;
+	margin-top : 2rem;
 	font-size : 4rem;
+	font-weight : bold;
 	word-break : keep-all;
 `
 
 const TitleP = styled.p`
 	display : inline-block;
-	margin : 2rem 0 2rem 2rem;
+	margin : 2rem 0 0 1rem;
 `
 
 const TitleImg = styled.img.attrs({

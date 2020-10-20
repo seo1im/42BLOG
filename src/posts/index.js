@@ -7,3 +7,14 @@ import Libft_6  from "./Libft_6.md"
 
 const posts = [ Libft_6, Libft_5, Libft_4, Libft_3, Libft_2, Libft_1 ];
 export default posts
+
+/*
+import Libft_1 from "./Libft_1.md"
+import lazy from "./LazyWrapper/LazyWrapper"
+
+Libft_1.comp = lazy;
+
+const posts = [Libft_1];
+
+export default posts;
+*/

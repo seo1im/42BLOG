@@ -1,6 +1,6 @@
-import React		from 'react'
-import { Route } 	from 'react-router-dom'
-import PropTypes 	from 'prop-types'
+import React, { lazy }	from 'react'
+import { Route } 		from 'react-router-dom'
+import PropTypes 		from 'prop-types'
 
 import BlogHome	from "./BlogHome/BlogHome"
 import BlogPost from "./BlogPost/BlogPost"

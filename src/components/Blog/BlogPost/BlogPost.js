@@ -1,7 +1,8 @@
-import React				from 'react'
+import React, { lazy, Suspense }		from 'react'
 import PropTypes 			from 'prop-types'
 
 import * as styled from "./BlogPostStyle"
+import posts from 'posts'
 
 const Button = ({link, str}) => (
 	str === "Previous" ? 
@@ -28,11 +29,13 @@ const Title = ({info}) => (
 )
 
 const Content = ({post}) => {
-	return(
+	return(		
 		<styled.Content>
 			<div dangerouslySetInnerHTML={{__html : post.html}} className="markdown"/>
 		</styled.Content>
 )}
+
+//
 
 class BlogPost extends React.Component {
     render () {

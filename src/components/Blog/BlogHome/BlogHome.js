@@ -48,7 +48,7 @@ const Category = ({categories}) => (
 	<styled.CategoryDiv>
 		<b>CATEGOTIES</b>
 		{categories.map((category ,i) => (
-			<styled.Category id={i}>
+			<styled.Category key={i}>
 				<styled.Link exact to={`/Blog/${category}`} color="black">{category}</styled.Link>
 			</styled.Category>
 		))}
@@ -59,8 +59,6 @@ class BlogHome extends React.Component {
     render () {
 		const { category } = this.props.match.params
 		const { posts, information } = this.props
-
-		console.log(this.props)
 
         return (
             <styled.BlogHome>

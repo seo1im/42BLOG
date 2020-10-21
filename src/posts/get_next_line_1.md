@@ -25,6 +25,9 @@ input stream의 데이터를 한줄(개행문자 기준)씩 읽어오는 함수�
 int get_next_line(int fd, char **line);
 ```
 
+1. Static 변수를 이해하고 활용할 수 있다.
+2. file system을 이해하고 활용할 수 있다.
+
 > 선수 지식
 
 

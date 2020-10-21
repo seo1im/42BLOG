@@ -8,9 +8,6 @@ Auther : seolim
 pre : 0
 next : 0
 ---
-
-
-# get_next_line 개요
 > Link
 
 [link not yet]()

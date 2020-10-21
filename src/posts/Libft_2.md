@@ -8,9 +8,6 @@ Auther : seolim
 pre : 1
 next : 3
 ---
-
-
-# Libft mem function
 > Link
 
 [https://github.com/seo1im/Libft](https://github.com/seo1im/Libft)

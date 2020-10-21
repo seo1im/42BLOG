@@ -8,8 +8,6 @@ Auther : seolim
 pre : 0
 next : 2
 ---
-
-# Libft 개요
 > Link
 
 [https://github.com/seo1im/Libft](https://github.com/seo1im/Libft)

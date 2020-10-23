@@ -6,7 +6,7 @@ Description : "ft_printf 개요"
 Date : 2020, 10, 20 (Tue)
 Auther : seolim
 pre : 0
-next : 0
+next : 2
 ---
 > Link
 

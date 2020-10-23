@@ -6,7 +6,7 @@ Description : "get_next_line에서 주의할 부분들을 알아보자"
 Date : 2020, 10, 21 (Wed)
 Auther : seolim
 pre : 2
-next : 0
+next : 4
 ---
 > Link
 

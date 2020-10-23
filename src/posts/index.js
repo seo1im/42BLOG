@@ -8,12 +8,14 @@ import Libft_6  from "./Libft_6.md"
 import get_next_line_1 from "./get_next_line_1.md"
 import get_next_line_2 from "./get_next_line_2.md"
 import get_next_line_3 from "./get_next_line_3.md"
+import get_next_line_4 from "./get_next_line_4.md"
 
 import ft_printf_1 from "./ft_printf_1.md"
+import ft_printf_2 from "./ft_printf_2.md"
 
 import cub3d_1 from "./cub3d_1.md"
 
-const posts = [ cub3d_1, ft_printf_1, get_next_line_3, get_next_line_2, get_next_line_1, Libft_6, Libft_5, Libft_4, Libft_3, Libft_2, Libft_1 ];
+const posts = [ get_next_line_4,ft_printf_2 , cub3d_1, ft_printf_1, get_next_line_3, get_next_line_2, get_next_line_1, Libft_6, Libft_5, Libft_4, Libft_3, Libft_2, Libft_1 ];
 export default posts
 
 /*

@@ -8,24 +8,24 @@ const PostDiv = styled.div`
 const TitleDiv = styled.div`
 	border-bottom : solid 0.01rem grey;
 
-	width : 100%;
 	margin-top : 3rem;
 	padding-top : 2rem;
 	padding-bottom : 4rem;
-	padding-left : calc((100% - 50rem) / 2);
-	padding-right : calc((100% - 50rem) / 2);
+	padding-left : calc((100% - 58rem) / 2);
+	padding-right : calc((100% - 58rem) / 2);
 	min-height : 10rem;
 	
 
-	@media only screen and (max-width: 50rem) {
-		padding-left : calc((100% - 50rem) / 2);
-		padding-right : calc((100% - 50rem) / 2);
-		width : calc(100% - 2rem);
+	@media only screen and (max-width: 60rem) {
+		padding-left : calc((100% - 58rem) / 2);
+		padding-right : calc((100% - 58rem) / 2);
+		width : 100%;
 	}
 `
 
 const Title = styled.div`
 	margin-top : 2rem;
+	margin-left : 3rem;
 	font-size : 4rem;
 	font-weight : bold;
 	word-break : keep-all;
@@ -33,7 +33,7 @@ const Title = styled.div`
 
 const TitleP = styled.p`
 	display : inline-block;
-	margin : 2rem 0 0 1rem;
+	margin : 2rem 0 0 3rem;
 `
 
 const TitleImg = styled.img.attrs({

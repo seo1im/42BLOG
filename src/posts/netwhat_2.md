@@ -6,7 +6,7 @@ Description : "IP에 대한 내용을 알아보자"
 Date : 2020, 10, 24 (Sat)
 Auther : seolim
 pre : 1
-next : 0
+next : 3
 tags : netwhat
 ---
 

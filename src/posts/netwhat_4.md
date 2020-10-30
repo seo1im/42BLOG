@@ -6,7 +6,7 @@ Description : "DHCP와 DNS에 대해 알아보자"
 Date : 2020, 10, 26 (Mon)
 Auther : seolim
 pre : 3
-next : 0
+next : 5
 tags : netwhat
 ---
 
